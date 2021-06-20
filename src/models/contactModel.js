@@ -5,7 +5,7 @@ const schema = mongoose.Schema
 const contactModel = new schema({
     subject: {
         type: String,
-        enum: ["create_order", "bug_report", "comment", "collaboration", "other"],
+        enum: ["order_simple_company", "order_advance_company", "order_simple_sale", "order_advance_sale", "custom_package", "bug_report", "comment", "collaboration", "other"],
         required: "enter subject!",
     },
     description: {
